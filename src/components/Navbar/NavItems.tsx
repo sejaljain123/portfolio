@@ -15,8 +15,8 @@ const NavbarLinks = [
     value: 'about_me',
   },
   {
-    name: 'Projects',
-    value: 'projects',
+    name: 'Learnings',
+    value: 'learnings',
   },
   {
     name: 'Contact ',
