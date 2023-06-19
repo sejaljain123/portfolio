@@ -6,6 +6,7 @@ import Hero from "../components/Hero/Hero"
 import About from "../components/About/About"
 import Tech from "../components/Tech/Tech"
 import Contact from "../components/Contact/Contact"
+import Projects from "../components/Projects/Projects"
 
 
 const IndexPage: React.FC<PageProps> = () => {
@@ -15,6 +16,8 @@ const IndexPage: React.FC<PageProps> = () => {
       <Hero />
       <About />
       <Tech />
+      <Projects />
+
       <Contact />
      </ChakraProvider>
   )

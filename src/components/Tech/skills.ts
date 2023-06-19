@@ -181,6 +181,7 @@ const Skills: Skill[] = [
     icon: SiHeroku,
     color: '#430098',
   },
+
 ];
 
 export default Skills;
