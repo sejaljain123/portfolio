@@ -32,7 +32,7 @@ function Hero() {
                 </a>
             </Flex>
             <Flex w="1/2" alignItems="center" >
-                <Image src = "/images/profile.png" alt="hero" />
+                <Image src = "https://i.imgur.com/t2QofF3.png" alt="hero" />
             </Flex>
         </Flex>
     )

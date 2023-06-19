@@ -11,7 +11,7 @@ function Tech() {
         align={{ base: 'center', lg: 'center' }}
         >
             <Box position="absolute" top="0" left="0" w="full" bg="#BECDF0"  zIndex={-1} >
-            <Image src = "/images/tech-bg.png"  alt="hero" />
+            <Image src = "https://i.imgur.com/0edYhZw.png"  alt="hero" />
             </Box>
             <Text fontSize="5xl" fontWeight="black" color="#3f4658" py="10" zIndex={1} >Tech Toolbox: My Expertise and Skills</Text>
 
