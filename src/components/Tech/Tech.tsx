@@ -10,12 +10,12 @@ function Tech() {
         p="20"
         align={{ base: 'center', lg: 'center' }}
         >
-            <Box position="absolute" top="0" left="0" w="full" bg="#BECDF0"  zIndex={-1} >
-            <Image src = "https://i.imgur.com/0edYhZw.png"  alt="hero" />
+            <Box position="absolute" top="0" left="0" w="full" h="full" bg="#BECDF0"  zIndex={-1} >
+            <Image src = "https://i.imgur.com/0edYhZw.png"  alt="hero" w="full" h="full" objectFit="cover" />
             </Box>
             <Text fontSize="5xl" fontWeight="black" color="#3f4658" py="10" zIndex={1} >Tech Toolbox: My Expertise and Skills</Text>
 
-            <Flex direction="row" flexWrap="wrap" justifyContent="center" gap="8" zIndex={1} w="80%">
+            <Flex direction="row" flexWrap="wrap" justifyContent="center" gap="8" zIndex={1} w="70%">
                 {
                     Skills.map((skill, index) => (
                         <Flex direction="column" alignItems="center" justifyContent="center"  key={index}>

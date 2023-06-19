@@ -9,8 +9,13 @@ import Contact from "../components/Contact/Contact"
 import Projects from "../components/Projects/Projects"
 
 
+export const Head: HeadFC = () => (<><title>Portfolio - Sejal Jain</title><link rel="icon" href="https://i.imgur.com/t2QofF3.png" /></>
+
+)
+
 const IndexPage: React.FC<PageProps> = () => {
   return (
+    
     <ChakraProvider>
       <Navbar />
       <Hero />
@@ -20,9 +25,8 @@ const IndexPage: React.FC<PageProps> = () => {
 
       <Contact />
      </ChakraProvider>
+ 
   )
 }
+export default IndexPage;
 
-export default IndexPage
-
-export const Head: HeadFC = () => <title>Portfolio</title>

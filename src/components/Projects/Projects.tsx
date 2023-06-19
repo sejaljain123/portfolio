@@ -13,23 +13,23 @@ function Projects() {
         zIndex={1}
         >
     <Flex w="80%" gap= "4" align="center" color="#3f51b5">
-        <Text fontWeight="bold" fontSize="3xl" w="30%">
+        <Text fontWeight="bold" fontSize="3xl" w={{base:"100%",xl:"30%"}}>
           My Learnings
         </Text>
-        <Divider borderWidth="thin" border="1px" />
+        <Divider borderWidth="thin" border="1px" display={{base:"none", lg:"block"}}/>
       </Flex>
       <Flex direction="column" gap="20" p="10" w="80%" justify="center" align="center">
     {
         ProjectsData.map((project, index) => (
-          <Flex w="100%" gap="20" justify="space-between" align="center" key={project.id} direction={index % 2 === 1 ? 'row-reverse' : 'row'}>
-          <Box width="100%" height={300} aspectRatio="square" borderRadius="2xl" boxShadow="md" _hover={{boxShadow:"10px 10px 37px -3px rgba(63,81,181,1)"}} cursor="pointer">
+          <Flex w="100%" gap="20" justify="space-between" align="center" key={project.id} direction={{ base: "column" , lg:`${index % 2 === 1 ? 'row-reverse' : 'row'}`}}>
+          <Box width={{base:500, lg:1000}} height={300} aspectRatio="square" borderRadius="2xl" boxShadow="md" _hover={{boxShadow:"10px 10px 37px -3px rgba(63,81,181,1)"}} cursor="pointer">
             <Image
               src={project.image}
               alt={project.image}
-              objectFit="cover"
               width="full"
               height="full"
               borderRadius="2xl"
+              objectFit="cover"
             />
           </Box>
           <VStack w="100%" align="center" textAlign="center">
