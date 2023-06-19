@@ -1,7 +1,6 @@
 import React from "react";
-import { Text, Flex, Box, Stat } from "@chakra-ui/react";
+import { Text, Flex, Box, Image } from "@chakra-ui/react";
 import Skills from "./skills";
-import { StaticImage } from "gatsby-plugin-image";
 
 function Tech() {
     return (
@@ -12,7 +11,7 @@ function Tech() {
         align={{ base: 'center', lg: 'center' }}
         >
             <Box position="absolute" top="0" left="0" w="full" bg="#BECDF0"  zIndex={-1} >
-            <StaticImage src = "../../images/tech-bg.png"  alt="hero" />
+            <Image src = "/images/tech-bg.png"  alt="hero" />
             </Box>
             <Text fontSize="5xl" fontWeight="black" color="#3f4658" py="10" zIndex={1} >Tech Toolbox: My Expertise and Skills</Text>
 

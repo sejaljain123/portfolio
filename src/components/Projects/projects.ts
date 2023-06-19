@@ -111,7 +111,7 @@ const ProjectsData = [
         color: '#FF9900',
       },
     ],
-    image: '/images/unscript.png',
+    image: 'images/unscript.png',
     github: '',
     demo: 'https://unscript.ai/',
     tag: 'SDE Intern',
