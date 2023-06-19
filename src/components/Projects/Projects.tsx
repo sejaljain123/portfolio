@@ -29,6 +29,7 @@ function Projects() {
               objectFit="cover"
               width="full"
               height="full"
+              borderRadius="2xl"
             />
           </Box>
           <VStack w="100%" align="center" textAlign="center">
