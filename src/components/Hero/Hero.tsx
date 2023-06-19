@@ -2,7 +2,6 @@ import { Box, Flex, Text, Image, Button } from '@chakra-ui/react';
 import React from 'react';
 import { NAVBAR_HEIGHT, NAVBAR_HEIGHT_MOBILE } from '../../constants';
 import axios from 'axios';
-import { StaticImage } from 'gatsby-plugin-image';
 
 function Hero() {
      
@@ -33,7 +32,7 @@ function Hero() {
                 </a>
             </Flex>
             <Flex w="1/2" alignItems="center" >
-                <StaticImage src = "../../images/profile.png" alt="hero" />
+                <Image src = "/images/profile.png" alt="hero" />
             </Flex>
         </Flex>
     )

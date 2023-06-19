@@ -9,20 +9,7 @@ const config: GatsbyConfig = {
   // If you use VSCode you can also use the GraphQL plugin
   // Learn more at: https://gatsby.dev/graphql-typegen
   graphqlTypegen: true,
-  plugins: [
-    '@chakra-ui/gatsby-plugin',
-    'gatsby-plugin-image',
-    'gatsby-plugin-sharp',
-    'gatsby-transformer-sharp',
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: 'images',
-        path: './src/images/',
-      },
-      __key: 'images',
-    },
-  ],
+  plugins: ['@chakra-ui/gatsby-plugin'],
 };
 
 export default config;

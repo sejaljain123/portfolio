@@ -1,7 +1,6 @@
 import { Flex, Text, Box, VStack, Image, Divider, Button, Link, Tag, TagLabel} from "@chakra-ui/react";
 import React from "react";
 import ProjectsData from "./projects";
-import { StaticImage } from "gatsby-plugin-image";
 import { SiGithub, SiGlobus } from "react-icons/si";
 import { FaExternalLinkAlt } from "react-icons/fa";
 
@@ -28,9 +27,8 @@ function Projects() {
               src={project.image}
               alt={project.image}
               objectFit="cover"
-              height="full"
               width="full"
-              borderRadius="2xl"
+              height="full"
             />
           </Box>
           <VStack w="100%" align="center" textAlign="center">
