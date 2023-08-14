@@ -5,12 +5,17 @@ import {
   SiChakraui,
   SiDocker,
   SiExpress,
+  SiGatsby,
+  SiJavascript,
+  SiJira,
+  SiNetlify,
   SiNextdotjs,
   SiNodedotjs,
   SiPostgresql,
   SiReact,
   SiTailwindcss,
   SiTypescript,
+  SiVercel,
 } from 'react-icons/si';
 
 const ProjectsData = [
@@ -68,7 +73,8 @@ const ProjectsData = [
   {
     id: 2,
     title: 'Unscript.ai',
-    description: 'A platform that helps user to take their marketing to the next level',
+    description:
+      'A platform that generates hyper personalized videos and help users to take their marketing to the next level.',
     tech: [
       {
         name: 'TypeScript',
@@ -110,6 +116,11 @@ const ProjectsData = [
         icon: SiAmazondynamodb,
         color: '#FF9900',
       },
+      {
+        name: 'Jira',
+        icon: SiJira,
+        color: '#0052CC',
+      },
     ],
     image: 'https://i.imgur.com/Oo3dqbY.png',
     github: '',
@@ -118,6 +129,77 @@ const ProjectsData = [
   },
   {
     id: 3,
+    title: 'CodeVerse',
+    tech: [
+      {
+        name: 'Javascript',
+        icon: SiJavascript,
+        color: '#007ACC',
+      },
+      {
+        name: 'React',
+        icon: SiReact,
+        color: '#61DAFB',
+      },
+      {
+        name: 'Node.js',
+        icon: SiNodedotjs,
+        color: '#339933',
+      },
+      {
+        name: 'Express',
+        icon: SiExpress,
+        color: '#000000',
+      },
+      {
+        name: 'Docker',
+        icon: SiDocker,
+        color: '#2496ED',
+      },
+      {
+        name: 'Netlify',
+        icon: SiNetlify,
+        color: '#32e6e2',
+      },
+    ],
+    description:
+      'CodeVerse is a remote code executor which runs code snippets of various languages is like Javascript, C++ and Python.',
+    image: 'https://i.imgur.com/vPpSeIz.png',
+    demo: 'https://codeverse-frontend.netlify.app',
+    github: 'https://github.com/sejaljain123/codeverse-frontend',
+  },
+  {
+    id: 4,
+    title: 'Portfolio',
+    tech: [
+      {
+        name: 'TypeScript',
+        icon: SiTypescript,
+        color: '#007ACC',
+      },
+      {
+        name: 'Gatsby',
+        icon: SiGatsby,
+        color: '#663399',
+      },
+      {
+        name: 'Chakra UI',
+        icon: SiChakraui,
+        color: '#319795',
+      },
+      {
+        name: 'Vercel',
+        icon: SiVercel,
+        color: '#000000',
+      },
+    ],
+    description: 'My personal website where you can see all my work and experiences',
+    image: 'https://i.imgur.com/AyFy9R4.png',
+    github: 'https://github.com/sejaljain123/portfolio',
+    demo: 'https://portfolio-htmizf3iu-sejaljain123.vercel.app/',
+  },
+  {
+    id: 5,
     title: 'DSA',
     description:
       "I'm currently focusing on learning Data structures and algorithms to improve my problem solving skills",

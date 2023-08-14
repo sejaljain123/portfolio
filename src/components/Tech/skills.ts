@@ -5,18 +5,23 @@ import {
   SiAmazonaws,
   SiAmazondynamodb,
   SiAwslambda,
+  SiBootstrap,
+  SiChakraui,
   SiCplusplus,
   SiDocker,
   SiExpress,
   SiFirebase,
+  SiFramer,
   SiGatsby,
   SiGit,
   SiGithub,
   SiHeroku,
+  SiJira,
   SiLinux,
   SiMongodb,
   SiMysql,
   SiNestjs,
+  SiNetlify,
   SiNodedotjs,
   SiPostgresql,
   SiPython,
@@ -24,6 +29,7 @@ import {
   SiRedux,
   SiServerless,
   SiSocketdotio,
+  SiTailwindcss,
   SiTypescript,
   SiVercel,
 } from 'react-icons/si';
@@ -90,6 +96,26 @@ const Skills: Skill[] = [
     name: 'Vue',
     icon: RiVuejsFill,
     color: '#4FC08D',
+  },
+  {
+    name: 'Chakra UI',
+    icon: SiChakraui,
+    color: '#319795',
+  },
+  {
+    name: 'Bootstrap',
+    icon: SiBootstrap,
+    color: '#7952B3',
+  },
+  {
+    name: 'Tailwind CSS',
+    icon: SiTailwindcss,
+    color: '#38B2AC',
+  },
+  {
+    name: 'Framer Motion',
+    icon: SiFramer,
+    color: '#0055FF',
   },
   {
     name: 'Node.js',
@@ -181,7 +207,16 @@ const Skills: Skill[] = [
     icon: SiHeroku,
     color: '#430098',
   },
-
+  {
+    name: 'Netlify',
+    icon: SiNetlify,
+    color: '#32e6e2',
+  },
+  {
+    name: 'Jira',
+    icon: SiJira,
+    color: '#0052CC',
+  },
 ];
 
 export default Skills;
