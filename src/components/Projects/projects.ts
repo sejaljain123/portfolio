@@ -212,7 +212,7 @@ const ProjectsData = [
   },
   {
     id: 6,
-    title: 'Portfolio',
+    title: 'Readit',
     tech: [
       {
         name: 'Javascript',
