@@ -27,6 +27,7 @@ import {
   SiPython,
   SiReact,
   SiRedux,
+  SiSass,
   SiServerless,
   SiSocketdotio,
   SiTailwindcss,
@@ -51,6 +52,11 @@ const Skills: Skill[] = [
     name: 'CSS',
     icon: DiCss3,
     color: '#2965f1',
+  },
+  {
+    name: 'SASS',
+    icon: SiSass,
+    color: '#CC6699',
   },
   {
     name: 'JavaScript',
