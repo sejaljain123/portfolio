@@ -32,7 +32,7 @@ function Hero() {
                 </a>
             </Flex>
             <Flex w={{lg:"1/2"}} alignItems={{lg:"center"}} >
-                <Image src = "/images/img.jpeg" alt="hero" objectFit="cover" borderRadius="full" w="64" height="64" shadow="xl" />
+                <Image src = "https://i.imgur.com/ZDYGR3R.jpg" alt="hero" objectFit="cover" borderRadius="full" w="64" height="64" shadow="xl" />
             </Flex>
         </Flex>
     )
