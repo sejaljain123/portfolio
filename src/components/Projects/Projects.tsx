@@ -8,7 +8,7 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 function Projects() {
   return (
     <Flex direction="column" alignItems="center" justify="center"  bg="#ecf1fd " 
-        p="10"
+        p={{base:"4", lg:"10"}}
         id="learnings"
         zIndex={1}
         >
@@ -18,11 +18,11 @@ function Projects() {
         </Text>
         <Divider borderWidth="thin" border="1px" display={{base:"none", lg:"block"}}/>
       </Flex>
-      <Flex direction="column" gap="20" p="10" w="80%" justify="center" align="center">
+      <Flex direction="column" gap="10" w="80%" justify="center" align="center" mt="10">
     {
         ProjectsData.map((project, index) => (
-          <Flex w="100%" gap="20" justify="space-between" align="center" key={project.id} direction={{ base: "column" , lg:`${index % 2 === 1 ? 'row-reverse' : 'row'}`}}>
-          <Box width={{base:500, lg:1000}} height={300} aspectRatio="square" borderRadius="2xl" boxShadow="md" _hover={{boxShadow:"10px 10px 37px -3px rgba(63,81,181,1)"}} cursor="pointer">
+          <Flex w="100%" gap={{base:"10", xl:"20"}} p={{base:"0", lg:"10"}} justify="space-between" align="center" key={project.id} direction={{ base: "column" , lg:`${index % 2 === 1 ? 'row-reverse' : 'row'}`}}>
+          <Box width={{base:350, sm:500, md: 1000}} height={300} aspectRatio="square" borderRadius="2xl" boxShadow="md" _hover={{boxShadow:"10px 10px 37px -3px rgba(63,81,181,1)"}} cursor="pointer">
             <Image
               src={project.image}
               alt={project.image}
@@ -36,7 +36,7 @@ function Projects() {
             <Text fontWeight="bold" fontSize="4xl" >
               {project.title}
             </Text>
-            <Text fontSize="md">
+            <Text fontSize="md" w={{base:"100%", lg:"50%"}}>
               {project.description}
             </Text>
             <Flex direction="row" flexWrap="wrap" justifyContent="center" gap="4" zIndex={1} w="100%" py="4">
@@ -54,12 +54,12 @@ function Projects() {
               bg="#e0234e"
               > <TagLabel>{project.tag}</TagLabel> </Tag>
             }
-            <Flex direction="row" justifyContent="center" alignItems="center" gap="4" zIndex={1} w="100%">
+            <Flex direction={{base:"column", lg:"row"}} justifyContent="center" alignItems="center" gap="6" mt="8" zIndex={1} w="100%">
                 {project.github && <Link href={project.github} target="_blank">
-                  <Button mt="10" alignSelf="left" w="56" bg="#3f51b5" color="white" variant="solid" _hover={{bg: "#3148C9", boxShadow:"lg"}} gap="2"> View Project <SiGithub color="white"/></Button></Link>}
+                  <Button alignSelf="left" w="56" bg="#3f51b5" color="white" variant="solid" _hover={{bg: "#3148C9", boxShadow:"lg"}} gap="2"> View Project <SiGithub color="white"/></Button></Link>}
                   {
                     project.demo && <Link href={project.demo} target="_blank">
-                    <Button mt="10" alignSelf="left" w="56" bg="#3f51b5" color="white" variant="solid" _hover={{bg: "#3148C9", boxShadow:"lg"}} gap="2"> Visit <FaExternalLinkAlt/></Button></Link>
+                    <Button alignSelf="left" w="56" bg="#3f51b5" color="white" variant="solid" _hover={{bg: "#3148C9", boxShadow:"lg"}} gap="2"> Visit <FaExternalLinkAlt/></Button></Link>
                   }
             </Flex>
            

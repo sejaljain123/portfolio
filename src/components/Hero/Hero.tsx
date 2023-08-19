@@ -10,29 +10,29 @@ function Hero() {
             mt={{ base: `${NAVBAR_HEIGHT_MOBILE}px`, lg: `${NAVBAR_HEIGHT}px` }}
             bg="#ecf1fd " 
             w="100%"
-            p={10} 
+            p={{base:'8', lg:'36'}}
             justifyContent="center"
             alignItems="center"
             color="#3f4658"
             direction={{ base: 'column-reverse', lg: 'row' }}
             id="home"
-            gap={20}
+            gap={{ base: '8', lg: '20' }}
         >
-            <Flex w="1/2" direction="column" fontWeight="bold" textAlign="left" >
+            <Flex w="1/2" direction="column" fontWeight="bold" textAlign={{base:"center", lg:"left"}} >
                 <Text fontSize="3xl">
                     - Hello 👋🏻
                 </Text>
-                <Text fontSize="6xl">
+                <Text fontSize={{base:"4xl", lg:"6xl"}}>
                     I'm <span style={{color: "#3f51b5", marginRight:"16px"}}>Sejal</span>
                     Jain
                 </Text>
-                <Text> Student at IIITM Gwalior | Full-Stack Web Developer based in India</Text>
+                <Text mt="4">  Student at IIITM Gwalior | Full-Stack Web Developer based in India</Text>
                 <a href="https://drive.google.com/file/d/1I904l4oqRetgaP4CLLwQ2iysvpZSYf-A/view?usp=sharing" target='_blank'>
                 <Button mt="10" alignSelf="left" w="48" bg="#3f51b5" color="white" variant="solid" _hover={{bg: "#3148C9"}}> Resume</Button>
                 </a>
             </Flex>
-            <Flex w="1/2" alignItems="center" >
-                <Image src = "https://i.imgur.com/t2QofF3.png" alt="hero" />
+            <Flex w={{lg:"1/2"}} alignItems={{lg:"center"}} >
+                <Image src = "/images/img.jpeg" alt="hero" objectFit="cover" borderRadius="full" w="64" height="64" shadow="xl" />
             </Flex>
         </Flex>
     )

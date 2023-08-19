@@ -9,13 +9,13 @@ function MobileNav({ isOpen, setIsOpen }: any) {
     <Flex
       w="100%"
       h="100%"
-      bg="white"
       position="fixed"
       left={0}
       top={0}
       direction="column"
       display={{ base: 'flex', lg: 'none' }}
       zIndex={4}
+      bg = "#ecf1fd"
     >
       <Flex direction="column" gap={8} p={10} fontSize="lg" pt={40}>
         <NavItems setIsOpen={setIsOpen} isOpen={isOpen} />

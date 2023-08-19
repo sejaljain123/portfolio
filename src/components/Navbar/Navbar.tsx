@@ -20,18 +20,19 @@ function Navbar() {
         shadow="sm"
         zIndex={10}
         w="100%"
-        justify={{base: 'end', lg: 'center'}}
         height={{ base: `${NAVBAR_HEIGHT_MOBILE}px`, lg: `${NAVBAR_HEIGHT}px` }}
         py={7}
-        px={{ base: '10', lg: '5', xl: '20' }}
+        px={10}
         bg="#ecf1fd"
         position="fixed"
         id="navbar"
       >
         <Flex
+          w="100%"
           alignItems="center"
           gap={{ md: '4', xl: '10' }}
           display={{ base: 'none', lg: 'flex' }}
+          justifyContent="center"
         >
           <NavItems />
         </Flex>
