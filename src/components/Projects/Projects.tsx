@@ -13,7 +13,7 @@ function Projects() {
         zIndex={1}
         >
     <Flex w="80%" gap= "4" align="center" color="#3f51b5">
-        <Text fontWeight="bold" fontSize="3xl" w={{base:"100%",xl:"30%"}}>
+        <Text fontWeight="bold" fontSize="3xl" w={{base:"100%",xl:"30%"}} textAlign={{base:"center"}}>
           My Learnings
         </Text>
         <Divider borderWidth="thin" border="1px" display={{base:"none", lg:"block"}}/>
@@ -68,7 +68,7 @@ function Projects() {
           </VStack>
 
         </Flex>
-        <Divider borderWidth="thin" border="1px" display={{base:"block", lg:"none"}}/>
+        {index === ProjectsData.length - 1 ? null : <Divider borderWidth="thin" border="1px" display={{base:"block", lg:"none"}} borderColor="#5B6FE0"/>}
         </>
         ))
     }
