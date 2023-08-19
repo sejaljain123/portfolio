@@ -1,7 +1,7 @@
 import * as React from "react"
 import type { HeadFC, PageProps } from "gatsby"
 import { Navbar } from "../components/Navbar"
-import { Box, ChakraProvider } from "@chakra-ui/react"
+import { Box, ChakraProvider, Link } from "@chakra-ui/react"
 import Hero from "../components/Hero/Hero"
 import About from "../components/About/About"
 import Tech from "../components/Tech/Tech"
@@ -9,7 +9,7 @@ import Contact from "../components/Contact/Contact"
 import Projects from "../components/Projects/Projects"
 
 
-export const Head: HeadFC = () => (<><title>Portfolio - Sejal Jain</title><link rel="icon" href="https://i.imgur.com/t2QofF3.png" /></>
+export const Head: HeadFC = () => (<><title>Portfolio - Sejal Jain</title><link rel="icon" href="/images/img.jpeg" /></>
 
 )
 
