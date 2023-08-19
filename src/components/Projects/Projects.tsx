@@ -21,22 +21,24 @@ function Projects() {
       <Flex direction="column" gap="10" w="80%" justify="center" align="center" mt="10">
     {
         ProjectsData.map((project, index) => (
-          <Flex w="100%" gap={{base:"10", xl:"20"}} p={{base:"0", lg:"10"}} justify="space-between" align="center" key={project.id} direction={{ base: "column" , lg:`${index % 2 === 1 ? 'row-reverse' : 'row'}`}}>
-          <Box width={{base:350, sm:500, md: 1000}} height={300} aspectRatio="square" borderRadius="2xl" boxShadow="md" _hover={{boxShadow:"10px 10px 37px -3px rgba(63,81,181,1)"}} cursor="pointer">
+          <>
+          <Flex w="100%" gap={{base:"10", xl:"20"}} p={{base:"0", lg:"10"}} justifyContent="space-between" align="center" key={project.id} direction={{ base: "column" , lg:`${index % 2 === 1 ? 'row-reverse' : 'row'}`}}>
+           <Box w={{base:"80", md:"3xl", lg:"4xl"}} borderRadius="2xl" border="0px" shadow="2xl"  _hover={{boxShadow:"10px 10px 37px -3px rgba(63,81,181,1)"}} cursor="pointer">
             <Image
               src={project.image}
               alt={project.image}
               width="full"
-              height="full"
               borderRadius="2xl"
               objectFit="cover"
-            />
-          </Box>
+              height="auto"
+
+/>
+            </Box>
           <VStack w="100%" align="center" textAlign="center">
-            <Text fontWeight="bold" fontSize="4xl" >
+            <Text fontWeight="bold" fontSize={{base:"2xl", lg:"4xl"}} >
               {project.title}
             </Text>
-            <Text fontSize="md" w={{base:"100%", lg:"50%"}}>
+            <Text fontSize={{base:"sm", lg:"md"}} w={{base:"100%", lg:"50%"}}>
               {project.description}
             </Text>
             <Flex direction="row" flexWrap="wrap" justifyContent="center" gap="4" zIndex={1} w="100%" py="4">
@@ -66,6 +68,8 @@ function Projects() {
           </VStack>
 
         </Flex>
+        <Divider borderWidth="thin" border="1px" display={{base:"block", lg:"none"}}/>
+        </>
         ))
     }
     
